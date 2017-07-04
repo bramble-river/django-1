@@ -17,10 +17,10 @@ from django.conf.urls import url
 
 from Djando1 import views
 
-# from django.contrib import admin
+from django.contrib import admin
 
 urlpatterns = [
-    # url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'sign/', views.sign),
     url(r'index/', views.index),
 ]
