@@ -22,5 +22,9 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'sign/', views.sign),
+    url(r'mail/', views.myemail),
     url(r'index/', views.index),
+    url(r'position0/', views.position),
+    url(r'position/(\d+)/(\d+)/', views.add,name="position"),
+    # url(r'company/', views.index),
 ]
